@@ -11,7 +11,8 @@ class App < Sinatra::Base
   end
 
   post '/checkout' do
-    
+    session[:item] = "Chair & desk"
+    @session = session
   end
 
 end
